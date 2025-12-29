@@ -80,21 +80,21 @@
     background-color: rgb(1,24,55);           /* HEX 011837 -- NCAR Space Blue */
   }
 
+
   /* -------------------------- */
   /* Coloring for Tip,Hint,and Important */
   .md-typeset :is(.admonition,details):is(.tip,.hint,.important) {
-      border-color: rgb(250, 161, 25);         /* PMS 1375 -- (NCAR Orange) */
+      border-color: rgb(0,121,124); /* PMS 3557 (UCAR Old Green) */
   }
   /* Coloring for header of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary){
-      background-color: rgba(250, 161, 25, 0.25); /* PMS 1375 -- (NCAR Orange) */
+      background-color: rgba(0,121,124,0.25); /* PMS 3557 (UCAR Old Green) */
   }
 
   /* Coloring for icon of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary):before {
-      background-color: rgb(1,24,55);   /* HEX 011837 -- NCAR Space Blue */
+      background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Old Green) */
   }
-  
 
   /* -------------------------- */
   /* standard HTML elements */
@@ -188,16 +188,16 @@
   /* -------------------------- */
   /* Coloring for Tip,Hint,and Important */
   .md-typeset :is(.admonition,details):is(.tip,.hint,.important) {
-      border-color: rgb(0,121,124); /* PMS 3557 (UCAR Green) */
+      border-color: rgb(0,121,124); /* PMS 3557 (UCAR Old Green) */
   }
   /* Coloring for header of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary){
-      background-color: rgba(0,121,124,0.25); /* PMS 3557 (UCAR Green) */
+      background-color: rgba(0,121,124,0.25); /* PMS 3557 (UCAR Old Green) */
   }
 
   /* Coloring for icon of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary):before {
-      background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Green) */
+      background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Old Green) */
   }
 
   /* -------------------------- */
