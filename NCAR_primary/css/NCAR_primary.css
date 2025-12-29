@@ -22,76 +22,79 @@
   --bg-image:                    url('../assets/images/NCAR-Waves.png');
 
   /* Default properties & color shades */
-  --md-default-bg-color:         #f1f4f7;
-  --md-typeset-a-color:          rgb(28,101,143); /* PMS 2152 (NCAR Blue) */
+  --md-default-bg-color:         rgb(241,240,238);    /* PMS: 7527 -- NCAR Light Gray */
+  --md-typeset-a-color:          rgb(0,53,122);       /* PMS: 654  -- NCAR Dark Blue  */
 
   /* Primary color shades */
-  --md-primary-fg-color:         rgb(28,101,143); /* PMS 2152 (NCAR Blue) */
+  --md-primary-fg-color:         rgb(0,53,122);       /* PMS: 654 -- NCAR Dark Blue  */
 
   /* Accent color shades */
-  --md-accent-fg-color:          rgb(0,121,124);       /* PMS 3557 (UCAR Green) */
+  --md-accent-fg-color:          rgb(0, 162, 180);   /* PMS 7710 -- UCAR Aqua        */
 
-  /* Code color shades */
+  /* Code color shades -- syntax highlighting for code in md: */
   --md-code-bg-color:            rgb(210,227,235,0.3);
   --md-code-fg-color:            rgb(11,33,57);
   --md-code-hl-number-color:     rgb(11,33,57);
   --md-code-hl-comment-color:    #8F0B0B;        /* ref: https://creativebooster.net/blogs/colors/shades-of-maroon-color */
-  --md-code-hl-variable-color:   rgb(1,33,105);  /* PMS 280 (Deep Blue) */
-  --md-code-hl-string-color:     rgb(0,121,124); /* PMS 3557 (UCAR Green) */
+  --md-code-hl-variable-color:   rgb(0, 87, 94);    /* PMS: 654 -- NCAR Blue  */
+  --md-code-hl-string-color:     rgb(0, 162, 180);  /* PMS 7710 -- UCAR Aqua. */
 
   /* Misc colors */
-  --md-title-color:              rgb(11,33,57);
+  --md-title-color:              rgb(1,24,55);     /* HEX: 011837 -- NCAR Space Blue */
   --md-title-small:              rgb(219,226,233); /* PMS 649 (Background Blue 3) */
 
+
+  --md-footer-bg-color:         rgb(0,53,122);    /* PMS: 654 -- NCAR Dark Blue  */
+  --md-footer-fg-color:         rgb(255,255,255); /* White
 
   /* Custom colorind for admonition boxes */
   /* -------------------------- */
   /* Coloring for Examples */
   .md-typeset :is(.admonition,details):is(.example) {
-      border-color: rgb(0,193,213);  /* PMS 3115 (NCAR Lightest Blue) */
+      border-color: rgb(0,87,194 );                 /* PMS: 2132 -- NCAR Blue */
   }
 
   /* Coloring for header of Examples */
   .md-typeset :is(.example)>:is(.admonition-title,summary) {
-      background-color: rgba(0,193,213,0.25);   /* PMS 3115 (NCAR Lightest Blue) */
+      background-color: rgb(0,87,194, 0.25);       /* PMS: 2132 -- NCAR Blue */
   }
 
   /* Coloring for icon of Examples */
   .md-typeset :is(.example)>:is(.admonition-title,summary):before {
-      background-color: rgb(28,101,143);  /* PMS 2152 (NCAR Blue) */
+      background-color: rgb(0,53,122);             /* PMS: 654 -- NCAR Dark Blue */
   }
 
   /* -------------------------- */
   /* Coloring for Questions */
   .md-typeset :is(.admonition,details):is(.question) {
-    border-color: rgb(0,127,163);  /* PMS 314 (NCAR Lighter Blue) */
+    border-color: rgb(0, 162, 180);         /* PMS 7710 -- (UCAR Aqua) */
   }
 
   /* Coloring for header of Questions */
   .md-typeset :is(.question)>:is(.admonition-title,summary) {
-    background-color: rgba(0,127,163,0.25);  /* PMS 314 (NCAR Lighter Blue) */
+    background-color: rgba(0,162,180,0.25);  /* PMS 7710 -- (UCAR Aqua) */
   }
 
   /* Coloring for icon of Questions */
   .md-typeset :is(.question)>:is(.admonition-title,summary):before {
-    background-color: rgb(1,33,105);   /* PMS 280 (Deep Blue) */
+    background-color: rgb(1,24,55);           /* HEX 011837 -- NCAR Space Blue */
   }
 
   /* -------------------------- */
   /* Coloring for Tip,Hint,and Important */
   .md-typeset :is(.admonition,details):is(.tip,.hint,.important) {
-      border-color: rgb(0,121,124); /* PMS 3557 (UCAR Green) */
+      border-color: rgb(250, 161, 25);         /* PMS 1375 -- (NCAR Orange) */
   }
   /* Coloring for header of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary){
-      background-color: rgba(0,121,124,0.25); /* PMS 3557 (UCAR Green) */
+      background-color: rgba(250, 161, 25, 0.25); /* PMS 1375 -- (NCAR Orange) */
   }
 
   /* Coloring for icon of Tip,Hint,and Important */
   .md-typeset :is(.tip,.hint,.important)>:is(.admonition-title,summary):before {
-      background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Green) */
+      background-color: rgb(1,24,55);   /* HEX 011837 -- NCAR Space Blue */
   }
-
+  
 
   /* -------------------------- */
   /* standard HTML elements */
@@ -153,12 +156,12 @@
   /* -------------------------- */
   /* Coloring for Examples */
   .md-typeset :is(.admonition,details):is(.example) {
-    border-color: rgb(28,101,143);  /* PMS 2152 (NCAR Blue) */
+    border-color: rgb(0,87,194);  /* PMS 2132 (NCAR Blue) */
   }
 
   /* Coloring for header of Examples */
   .md-typeset :is(.example)>:is(.admonition-title,summary) {
-    background-color: rgba(28,101,143,0.25);  /* PMS 2152 (NCAR Blue) */
+    background-color: rgba(0,87,194,0.25);  /* PMS 2132 (NCAR Blue) */
   }
 
   /* Coloring for icon of Examples */
