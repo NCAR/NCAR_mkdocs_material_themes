@@ -96,6 +96,9 @@
       background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Old Green) */
   }
 
+  .md-search__form {
+    background-color:rgb(0,87,194, 0.50);
+  }
   /* -------------------------- */
   /* standard HTML elements */
 }
@@ -200,9 +203,7 @@
       background-color: rgba(0,121,124,1); /* PMS 3557 (UCAR Old Green) */
   }
 
-  .md-search__form {
-    background-color:rgb(0,87,194, 0.50);
-  }
+
 
   /* -------------------------- */
   /* standard HTML elements */
